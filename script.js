@@ -1,4 +1,3 @@
-// script.js
 document.getElementById('addTaskBtn').addEventListener('click', addTask);
 document.getElementById('taskInput').addEventListener('keypress', function (e) {
   if (e.key === 'Enter') {
@@ -23,7 +22,7 @@ function addTask() {
 
   // Add a delete button
   const deleteBtn = document.createElement('button');
-  deleteBtn.textContent = 'Delete';
+  deleteBtn.innerHTML = '<i class="fas fa-trash"></i>';
   deleteBtn.addEventListener('click', function () {
     taskList.removeChild(li);
   });
